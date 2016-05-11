@@ -26,6 +26,7 @@ function doget(data, url, callback) {
 		console.log("callback doget-2");
     }
     xhr.send(data);
+    console.log("called doget");
 }
 function dopost(data, url, callback) {
     if (!url) return;
