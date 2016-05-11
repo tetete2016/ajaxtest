@@ -14,6 +14,7 @@ if (!window.XMLHttpRequest) {
     };
 }
 function doget(data, url, callback) {
+    console.log("called doget");
     if (!url) return;
     if (!callback) callback = function (responsetext) { };
     var xhr = new XMLHttpRequest();
@@ -26,7 +27,6 @@ function doget(data, url, callback) {
 		console.log("callback doget-2");
     }
     xhr.send(data);
-    console.log("called doget");
 }
 function dopost(data, url, callback) {
     if (!url) return;

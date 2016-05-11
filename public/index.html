@@ -3,14 +3,15 @@
 <body>
     <script src="TeteteAjax.js"></script>
     <script>
+        console.log("aa");
         var x = Math.random() * 100;
         var y = Math.random() * 100;
         var r = 999;
         var index = 5;
-        doget((null, "/serverside?x=" + Math.round(x) + "&y=" + Math.round(y)
+        doget(null, "/serverside?x=" + Math.round(x) + "&y=" + Math.round(y)
 				+ "&rotation=" + r + "&index=" + index, function(res) {
 				    console.log(res);
-				}));
+				});
     </script>
 </body>
 </html>
