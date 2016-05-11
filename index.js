@@ -6,7 +6,7 @@ app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static('public'));
 
-app.get('/serverside', function (request, response) {
+app.get('/', function (request, response) {
     response.send(x);
     x++;
 });
