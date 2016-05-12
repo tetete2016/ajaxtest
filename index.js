@@ -11,11 +11,11 @@ app.get('/serverside', function (request, response) {
 });
 
 app.post('/highscore', function (request, response) {
-    console.log(JSON.stringify(request.query));
+    console.log("POST " + JSON.stringify(request.query));
 });
 
 app.get('/highscore', function (request, response) {
-    console.log("high score get");
+    console.log("GET "+JSON.stringify(request.query));
 });
 
 app.listen(app.get('port'), function () {
