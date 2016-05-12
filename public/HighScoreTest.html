@@ -1,0 +1,29 @@
+<html>
+
+<body>
+    <button onclick="sendScore()">send score</button>
+    <input type="text" id="name" />
+    <input type="number" id="score" />
+    <div id="scoreBox"></div>
+    <script src="TeteteAjax.js"></script>
+    <script>
+        var scoreBox = document.getElementById("scoreBox");
+        var nameField = document.getElementById("name");
+        var scoreField = document.getElementById("name");
+        function sendScore() {
+            dopost(JSON.stringify({ score: scoreBox.value, name: nameField.value }));
+        }
+        /*
+        console.log("aa");
+        var x = Math.random() * 100;
+        var y = Math.random() * 100;
+        var r = 999;
+        var index = 5;
+        doget(null, "/serverside?x=" + Math.round(x) + "&y=" + Math.round(y)
+				+ "&rotation=" + r + "&index=" + index, function(res) {
+				    console.log(res);
+				});
+                */
+    </script>
+</body>
+</html>
