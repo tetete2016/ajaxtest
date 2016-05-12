@@ -11,7 +11,9 @@
         var nameField = document.getElementById("name");
         var scoreField = document.getElementById("name");
         function sendScore() {
-            dopost(JSON.stringify({ score: scoreBox.value, name: nameField.value }));
+            dopost(JSON.stringify({ score: scoreBox.value, name: nameField.value }), "/highscore", function (res) {
+                console.log("score sent!!");
+            });
         }
         /*
         console.log("aa");
