@@ -16,7 +16,7 @@ app.post('/highscore', function (request, response) {
 });
 
 app.get('/highscore', function (request, response) {
-    console.log("GET " + JSON.stringify(request.query));
+    console.log(request);
     response.send("score");
 });
 
