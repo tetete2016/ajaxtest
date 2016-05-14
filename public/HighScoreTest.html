@@ -9,9 +9,9 @@
     <script>
         var scoreBox = document.getElementById("scoreBox");
         var nameField = document.getElementById("name");
-        var scoreField = document.getElementById("name");
+        var scoreField = document.getElementById("score");
         function sendScore() {
-            dopost(JSON.stringify({ score: scoreBox.value, name: nameField.value }), "/highscore", function (res) {
+            dopost(JSON.stringify({ score: scoreField.value, name: nameField.value }), "/highscore", function (res) {
                 console.log("score sent!!");
             });
         }
