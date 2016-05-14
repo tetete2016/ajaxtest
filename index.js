@@ -12,10 +12,12 @@ app.get('/serverside', function (request, response) {
 
 app.post('/highscore', function (request, response) {
     console.log("POST " + JSON.stringify(request.query));
+    response.send("score sent!!");
 });
 
 app.get('/highscore', function (request, response) {
-    console.log("GET "+JSON.stringify(request.query));
+    console.log("GET " + JSON.stringify(request.query));
+    response.send("score");
 });
 
 app.listen(app.get('port'), function () {
