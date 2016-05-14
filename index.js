@@ -11,12 +11,12 @@ app.get('/serverside', function (request, response) {
 });
 
 app.post('/highscore', function (request, response) {
-    console.log(request);
+    console.log(request.body);
     response.send("score sent!!");
 });
 
 app.get('/highscore', function (request, response) {
-    console.log(request);
+    console.log(request.body);
     response.send("score");
 });
 
