@@ -11,7 +11,7 @@ app.get('/serverside', function (request, response) {
 });
 
 app.post('/highscore', function (request, response) {
-    console.log("POST " + JSON.stringify(request.query));
+    console.log("POST " + JSON.stringify(request.body));
     response.send("score sent!!");
 });
 
